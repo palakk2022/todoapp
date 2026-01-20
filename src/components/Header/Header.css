@@ -1,0 +1,46 @@
+.header {
+  background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+  color: white;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+  text-align: center;
+  color: #90caf9;
+  font-size: 0.875rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+}

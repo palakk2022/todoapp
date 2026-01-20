@@ -1,0 +1,42 @@
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 2px solid #bbdefb;
+  background: white;
+  color: #0d47a1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #0d47a1;
+  color: white;
+  border-color: #0d47a1;
+  box-shadow: 0 2px 6px rgba(13, 71, 161, 0.35);
+}
+.filter-btn:hover {
+  background: #e3f2fd;
+}
+.filter-btn.active:hover {
+  background: #0b3d91;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 425px) {
+  .filter-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

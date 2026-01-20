@@ -1,0 +1,123 @@
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  color: #0c26ab;
+  margin-bottom: 0.5rem;
+}
+
+.empty-subtitle {
+  font-size: 0.85rem;
+  color: #6083b1;
+}
+/*  */
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.75rem;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #90caf9;
+  border-radius: 0.25rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.checkbox.checked {
+  background: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #9e9e9e;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid #90caf9;
+  border-radius: 0.3rem;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.action.edit { color: #0d47a1; }
+.action.delete { color: #d32f2f; }
+.action.save { color: #2e7d32; }
+.action.cancel { color: #d32f2f; }
+.action:hover {
+  opacity: 0.7;
+}
+.task-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.task-item.done {
+  border-left-color: #2e7d32;
+}
+.task-item:not(.done) {
+  border-left-color: #90caf9;
+}
+.task-item.done .checkbox {
+  background: #2e7d32;
+  border-color: #2e7d32;
+}
+.task-item:not(.done) .checkbox {
+  background: transparent;
+  border-color: #90caf9;
+}
+.task-item.done .task-text {
+  text-decoration: line-through;
+  color: #9e9e9e;
+}
+.task-item:not(.done) .task-text {
+  color: #333;
+}
+/*  */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.task-item .task-name {
+  flex: 1 1 60%;
+  word-break: break-word;
+}
+
+.task-item button {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+}

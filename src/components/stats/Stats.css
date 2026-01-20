@@ -1,0 +1,79 @@
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  
+}
+.stat-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+  outline: 1px solid #90caf9;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.blue {
+  color: #0d47a1;
+}
+
+.green {
+  color: #2e7d32;
+}
+
+.orange {
+  color: #f57c00;
+}
+.completed-card {
+  border-top: 2px solid #2e7d32;
+}
+.pending-card {
+  border-top: 2px solid #f57c00;
+}
+.total-card {
+  border-top: 2px solid #0d47a1;
+}
+.completed-card:hover {
+  outline: 1px solid #a5d6a7;
+}
+.pending-card:hover {
+  outline: 1px solid #ffcc80;
+}
+.total-card:hover {
+  outline: 1px solid #90caf9;
+}
+.stats {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 425px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats-container {
+  grid-template-columns: 1fr;
+}
+
+}
