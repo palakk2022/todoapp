@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
-import Stats from "../components/Stats/Stats";
+import Stats from "../components/stats/Stats.jsx";
 import TaskInput from "../components/TaskInput/TaskInput";
 import FilterTabs from "../components/FilterTabs/FilterTab";
 import TaskList from "../components/TaskList/TaskList";
